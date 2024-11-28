@@ -47,7 +47,7 @@ fertilizer_encoder = joblib.load('fertilizer_prediction_model_large_data_encoder
 def predict_fertilizer():   
     try:
         data = request.json
-        Crop = data.get('Crop')
+        Crop = data.get('crop')
         temperature = data.get('temperature')
         humidity = data.get('humidity')
         moisture = data.get('moisture')
